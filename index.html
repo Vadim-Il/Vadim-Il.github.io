@@ -4,10 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Orelega+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
+
 <body>
+
+    <!--NAVBAR SECTION-->
+
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
+    <!--BG VIDEO SECTION-->
+
+    <div id="home">
+        <video autoplay muted loop id="typing_video">
+            <source src="./video/bg_video.mp4" type="video/mp4">
+            HTML5 video is not supported by your browser.
+        </video>
+    </div>
+
+    <!--TEXT OVER VIDEO SECTION-->
+
+    <div class="video_text">
+        <h1 class="color_text">Vadim's portfolio</h1>
+        <p class="center">
+            <q>Program that doesn't work well usually is more harmful
+                <br>than the programm that doesn't work at all.</q>
+            <br>-Andy Hunt and Dave Thomas
+            <br>
+            <br>
+            Hello! My name is Vadim and You are very welcome to my first portfolio webpage! On this page I'll briefly
+            introduce myself and tell you about my achievements as a web developer.
+            <br>
+            <br>
+            Hope you will enjoy staying on that page!
+        </p>
+    </div>
+
+    <!--ABOUT SECTION-->
+
+    <div class="row" id="about">
+
+        <!--LEFT COLUMN-->
+        <div class="column_1">
+            <h1>About me</h1>
+            <p>I am study web development to switch my current carrier and I really like to code! As I have a full-time
+                job I am spending my free time doing coding and learning courses.</p>
+            <p>At the moment I am studying <a href="https://www.pitman-training.com/" target="_blank">Pitman
+                    Training's</a> Web Developer course, and got knowledge and experience in such
+                programming languages as: HTML, CSS and JavaScript. Have ambitions to keep developing my knowledges by
+                learning new subjects like SQL, C#, and .NET Framework.</p>
+            <p> I am a beginning web developer and would like to <a href="#contact">hear back</a> from you! </p>
+        </div>
+
+        <!--RIGHT COLUMN-->
+        <div class="column_2">
+            <img src="./photos/about.jpg" alt="Laptop Picture">
+        </div>
+    </div>
+
+    <!--GITHUB SECTION-->
+
+    <div class="row" id="github">
+
+        <!--LEFT COLUMN-->
+        <div class="column_2">
+            <a href="https://github.com/Vadim-Il" target="_blank"><img src="./photos/github.png" alt="GitHub Logo"></a>
+        </div>
+
+        <!--RIGHT COLUMN-->
+        <div class="column_1">
+            <h1>Github</h1>
+            <p>Have a look at my coding projects on my GitHub profile. It is regularly updated:</p>
+            <br>
+            <p class="center"><a href="https://github.com/Vadim-Il" target="_blank">My GitHub</a>
+            </p>
+        </div>
+
+    </div>
+
+    <!--CONTACT SECTION-->
+
+    <div class="row" id="contact">
+
+        <!--LEFT COLUMN-->
+        <div class="column_1 column_tall">
+            <h1>Contact</h1>
+            <!--This specifies where and how to send the form data; we are leaving it blank-->
+            <form action="" method="post">
+                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+
+                <label>Your name:</label>
+                <input type="text" placeholder="Enter your name">
+                <label>Your Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your Email">
+                <label>Your message:</label>
+                <input type="text" id="message" name="message" placeholder="Enter your message">
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+        <!--RIGHT COLUMN-->
+        <div class="column_2 column_tall">
+            <img src="./photos/contact.jpg" alt="Contact image">
+        </div>
+    </div>
+
+    <!--FOOTER SECTION-->
+
+    <footer>
+        <p>
+        <p class="center">&copy; 2022 by Vadims Iljins, <a href="https://github.com/Vadim-Il" type="_blank">My
+                GitHub</a></p>
+        </p>
+    </footer>
 
 </body>
 
